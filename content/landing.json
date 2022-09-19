@@ -15,7 +15,8 @@
       "쿠아의 권능과 영광이",
       "영원히 황신영의 것입니다."
     ],
-    "id": "main"
+    "id": "main",
+    "displayName": "KUAAA"
   },
   {
     "backgroundUrl": "/img/landing-background-observation.jpg",
@@ -33,7 +34,8 @@
       "쿠아의 권능과 영광이",
       "영원히 황신영의 것입니다."
     ],
-    "id": "observation"
+    "id": "observation",
+    "displayName": "관측회"
   },
   {
     "backgroundUrl": "/img/landing-background-seminar.jpg",
@@ -51,7 +53,8 @@
       "쿠아의 권능과 영광이",
       "영원히 황신영의 것입니다."
     ],
-    "id": "seminar"
+    "id": "seminar",
+    "displayName": "세미나"
   },
   {
     "backgroundUrl": "/img/landing-background-mt.jpg",
@@ -69,7 +72,8 @@
       "쿠아의 권능과 영광이",
       "영원히 황신영의 것입니다."
     ],
-    "id": "mt"
+    "id": "mt",
+    "displayName": "MT"
   },
   {
     "backgroundUrl": "/img/landing-background-picture.jpg",
@@ -87,6 +91,7 @@
       "쿠아의 권능과 영광이",
       "영원히 황신영의 것입니다."
     ],
-    "id": "pciture"
+    "id": "picture",
+    "displayName": "출사"
   }
 ]

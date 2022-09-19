@@ -2,6 +2,7 @@ import { css, Global } from "@emotion/react";
 import styled from "@emotion/styled";
 import type { NextPage } from "next";
 import LandingPage from "../components/landing/LandingPage";
+import Navigator from "../components/landing/Navigator";
 import landingContent from "../content/landing.json";
 
 const LandingPageContainer = styled.div`
@@ -24,6 +25,7 @@ const Home: NextPage = () => {
           }
         `}
       />
+      <Navigator />
       <LandingPageContainer>
         {landingContent.map((c, i) => (
           <LandingPage key={i} {...c} />

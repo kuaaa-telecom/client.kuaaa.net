@@ -49,18 +49,14 @@ const Title = styled.div`
 const SubTitle = styled.div`
   font-size: calc(10px + 3vmin);
   font-weight: 600;
-  color: #ffffffa1;
-`;
-
-const ContentTextContainer = styled.div`
-  display: flex;
-  flex-direction: column;
-  gap: 4px;
+  color: white;
+  opacity: 60%;
 `;
 
 const Content = styled.div`
   font-size: calc(10px + 1vmin);
-  font-weight: 300;
+  font-weight: 400;
+  opacity: 80%;
 `;
 
 const ContentText = styled.p`
