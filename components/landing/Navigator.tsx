@@ -31,10 +31,18 @@ const NavigatorContainer = styled.div`
 `;
 
 const NavigatorContent = styled.div`
+  padding: 12px;
   font-size: calc(10px + 1vmin);
   font-weight: 400;
   color: white;
   opacity: 60%;
+  user-select: none;
+  transition: opacity 0.15s ease-in-out;
+
+  &:hover {
+    opacity: 100%;
+    text-shadow: rgba(255, 255, 255, 0.5) 0 0 8px;
+  }
 `;
 
 const Navigator: React.FC = () => {
