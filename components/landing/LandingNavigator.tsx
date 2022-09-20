@@ -54,7 +54,7 @@ const NavigatorContent = styled.div<{ currentPage: string; page: string }>`
   }
 `;
 
-const Navigator: React.FC<Props> = (props) => {
+const LandingNavigator: React.FC<Props> = (props) => {
   const { currentPage, handleMoveToPage } = props;
 
   console.log(currentPage);
@@ -79,4 +79,4 @@ const Navigator: React.FC<Props> = (props) => {
   );
 };
 
-export default Navigator;
+export default LandingNavigator;
