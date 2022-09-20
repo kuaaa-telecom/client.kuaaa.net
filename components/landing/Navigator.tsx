@@ -1,5 +1,6 @@
 import styled from "@emotion/styled";
 import "animate.css/animate.min.css";
+import Link from "next/link";
 import landingContent from "../../content/landing.json";
 
 const NavigatorBackground = styled.div`
@@ -42,7 +43,9 @@ const Navigator: React.FC = () => {
       <NavigatorBackground>
         <NavigatorContainer>
           {landingContent.map((c) => (
-            <NavigatorContent key={c.id}>{c.displayName}</NavigatorContent>
+            <Link key={c.id} href={`#${c.id}`}>
+              <NavigatorContent>{c.displayName}</NavigatorContent>
+            </Link>
           ))}
         </NavigatorContainer>
       </NavigatorBackground>

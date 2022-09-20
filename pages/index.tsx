@@ -10,6 +10,7 @@ const LandingPageContainer = styled.div`
   height: 100vh;
   scroll-snap-type: y mandatory;
   overflow-y: scroll;
+  scroll-behavior: smooth;
 `;
 
 const Home: NextPage = () => {
@@ -28,7 +29,9 @@ const Home: NextPage = () => {
       <Navigator />
       <LandingPageContainer>
         {landingContent.map((c, i) => (
-          <LandingPage key={i} {...c} />
+          <div key={i} id={c.id}>
+            <LandingPage {...c} />
+          </div>
         ))}
       </LandingPageContainer>
     </>
