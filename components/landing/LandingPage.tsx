@@ -1,6 +1,6 @@
 import styled from "@emotion/styled";
 import "animate.css/animate.min.css";
-import Image from "../Image";
+import Image from "next/image";
 
 interface Props {
   backgroundUrl: string;
