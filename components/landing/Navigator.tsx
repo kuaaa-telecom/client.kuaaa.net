@@ -38,6 +38,7 @@ const NavigatorContent = styled.div<{ currentPage: string; page: string }>`
   padding: 12px;
   font-size: calc(10px + 1vmin);
   font-weight: 400;
+  white-space: nowrap;
   color: white;
   opacity: ${(props) => (props.currentPage !== props.page ? "60%" : "100%")};
   user-select: none;
