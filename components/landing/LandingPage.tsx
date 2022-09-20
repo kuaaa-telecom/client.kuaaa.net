@@ -39,6 +39,7 @@ const ContentContainer = styled.div`
   justify-content: center;
   color: white;
   word-break: keep-all;
+  user-select: none;
 `;
 
 const Title = styled.div`
