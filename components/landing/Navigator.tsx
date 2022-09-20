@@ -1,10 +1,14 @@
 import styled from "@emotion/styled";
 import "animate.css/animate.min.css";
-import Link from "next/link";
 import landingContent from "../../content/landing.json";
 
+interface Props {
+  currentPage: string | null;
+  handleMoveToPage: (id: string) => void;
+}
+
 const NavigatorBackground = styled.div`
-  position: absolute;
+  position: fixed;
   width: 100%;
   height: 16vh;
   background: linear-gradient(
@@ -30,22 +34,44 @@ const NavigatorContainer = styled.div`
   justify-content: space-evenly;
 `;
 
-const NavigatorContent = styled.div`
+const NavigatorContent = styled.div<{ currentPage: string; page: string }>`
+  padding: 12px;
   font-size: calc(10px + 1vmin);
   font-weight: 400;
+  white-space: nowrap;
   color: white;
-  opacity: 60%;
+  opacity: ${(props) => (props.currentPage !== props.page ? "60%" : "100%")};
+  user-select: none;
+  text-shadow: ${(props) =>
+    props.currentPage !== props.page
+      ? "unset"
+      : "rgba(255, 255, 255, 0.5) 0 0 8px"};
+  transition: opacity 0.15s ease-in-out;
+
+  &:hover {
+    opacity: 100%;
+    text-shadow: rgba(255, 255, 255, 0.5) 0 0 8px;
+  }
 `;
 
-const Navigator: React.FC = () => {
+const Navigator: React.FC<Props> = (props) => {
+  const { currentPage, handleMoveToPage } = props;
+
+  console.log(currentPage);
+
   return (
     <>
       <NavigatorBackground>
         <NavigatorContainer>
           {landingContent.map((c) => (
-            <Link key={c.id} href={`#${c.id}`}>
-              <NavigatorContent>{c.displayName}</NavigatorContent>
-            </Link>
+            <NavigatorContent
+              key={c.id}
+              currentPage={currentPage ?? ""}
+              page={c.id}
+              onClick={() => handleMoveToPage(c.id)}
+            >
+              {c.displayName}
+            </NavigatorContent>
           ))}
         </NavigatorContainer>
       </NavigatorBackground>
