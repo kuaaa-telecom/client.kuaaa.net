@@ -51,6 +51,7 @@ const NavigatorContent = styled.div<{ currentPage: string; page: string }>`
   &:hover {
     opacity: 100%;
     text-shadow: rgba(255, 255, 255, 0.5) 0 0 8px;
+    cursor: pointer;
   }
 `;
 
