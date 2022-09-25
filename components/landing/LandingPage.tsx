@@ -39,6 +39,7 @@ const ContentContainer = styled.div`
   justify-content: center;
   color: white;
   word-break: keep-all;
+  user-select: none;
 `;
 
 const Title = styled.div`
@@ -47,6 +48,7 @@ const Title = styled.div`
 `;
 
 const SubTitle = styled.div`
+  padding-left: 0.3rem;
   font-size: calc(10px + 3vmin);
   font-weight: 600;
   color: white;
@@ -60,6 +62,7 @@ const Content = styled.div`
 `;
 
 const ContentText = styled.p`
+  min-height: 0.5rem;
   margin-bottom: 6px;
   margin-top: 6px;
 `;
