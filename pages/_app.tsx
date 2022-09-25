@@ -13,6 +13,33 @@ function MyApp({ Component, pageProps }: AppProps) {
           crossOrigin="crossOrigin"
           href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.5/dist/web/static/pretendard-dynamic-subset.css"
         />
+        <title>KUAAA</title>
+        <meta
+          name="description"
+          content="고려대학교 아마추어 천문회 KUAAA 공식 페이지."
+        />
+        <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+        <meta property="og:title" content="KUAAA" />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="kuaaa.net" />
+        <meta
+          property="og:image"
+          content="https://kuaaa.net/landing-background-main.jpg"
+        />
+        <meta property="og:site_name" content="KUAAA" />
+        <meta property="og:locale" content="ko_KR" />
+        <meta property="og:image:width" content="1200" />
+        <meta property="og:image:height" content="630" />
+        <meta name="twitter:card" content="photo" />
+        <meta name="twitter:title" content="KUAAA" />
+        <meta
+          name="twitter:description"
+          content="고려대학교 아마추어 천문회 KUAAA 공식 페이지."
+        />
+        <meta
+          name="twitter:image"
+          content="https://kuaaa.net/landing-background-main.jpg"
+        />
       </Head>
       <Global
         styles={css`
